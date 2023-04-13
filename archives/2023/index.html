@@ -170,16 +170,16 @@
         z-index: 1998;
     }
     .sidebar {
-        width: 66%;
+        width: 0;
         height: 100%;
         position: fixed;
         top: 0;
-        right: -100%;
+        right: 0;
         bottom: 0;
         background: #fff;
         z-index: 1999;
         text-align: center;
-        box-shadow: -6px 0 20px rgba(98, 94, 94, .815);
+        box-shadow: -6px 0 20px rgba(98, 94, 94, .815)
     }
 
     .topo {
@@ -260,7 +260,7 @@
 		.click( function () {
 			$( '.sidebar' )
 				.animate( {
-					right: "0"
+					width: "66%"
 				}, 500 );
 			$( '.shelter' )
 				.fadeIn( "slow" )
@@ -269,7 +269,7 @@
 		.click( function ( e ) {
 			$( '.sidebar' )
 				.animate( {
-					right: "-100%"
+					width: "0"
 				}, 500 );
 			$( '.shelter' )
 				.fadeOut( "slow" )
